@@ -1,0 +1,22 @@
+{
+  "events": {
+    "0": {
+      "artistName": "Sample Artist",
+      "date": "Saturday, 8",
+      "month": "june",
+      "venue": "Ruins",
+      "vibeDescription": "21+ Bar and Music Venue",
+      "additionalDescription": "Standing Room Only",
+      "ticketLink": "https://www.ruinsdeepellum.com"
+    },
+    "1": {
+      "artistName": "Sample Artist",
+      "date": "Friday, 21",
+      "month": "june",
+      "venue": "The Factory",
+      "vibeDescription": "All Ages Music Venue",
+      "additionalDescription": "Standing Room Only",
+      "ticketLink": "https://www.thefactoryindeepellum.com"
+    }
+  }
+}
