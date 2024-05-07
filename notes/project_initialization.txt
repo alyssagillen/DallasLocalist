@@ -1,0 +1,11 @@
+Initializing the Project:
+
+1. In Code folder, run ng new dallas-localist
+2. Set Encapsulation in app component
+    app.component.ts -> encapsulation: ViewEncapsultaion.None
+3. Generate Home component, run ng generate component home
+4. Add route to home component
+    app-routing.module.ts
+    {path: '', component: HomeComponent} added to Routes
+5. From src, run ng serve, open localhost:4200 in browser
+    The home page appears!

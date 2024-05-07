@@ -1,0 +1,28 @@
+.month-box-width{
+    width: 36.5rem;
+}
+.non-month-box-width{
+    width: 17rem;
+}
+.end-spacing{
+    justify-content: end;
+}
+.between-spacing{
+    justify-content: space-between;
+}
+.text{
+    color: #000;
+    font-family: "Apple SD Gothic Neo";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8125rem; 
+}
+.uppercase-text{
+    text-transform: uppercase;
+}
+@media(max-width: 1024px){
+    .month-box-width{
+        width: 17rem;
+    }
+}

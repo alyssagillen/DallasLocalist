@@ -1,0 +1,48 @@
+<div
+  class="body"
+  style="display: flex; justify-content: space-around; margin-top: 5rem"
+>
+  <app-header-graphic></app-header-graphic>
+  <div style="display: flex; flex-direction: column">
+    <app-arrow-heading
+      headingText="events"
+      style="margin-bottom: 15px"
+    ></app-arrow-heading>
+    <app-rectangle-box
+      text="june"
+      (toggleBoxes)="toggleBoxesJune($event)"
+    ></app-rectangle-box>
+    <div *ngIf="toggleJuneBoxesOn" style="display: flex;" class="responsive-cards">
+      <app-event-card
+        *ngFor="let i of objectKeys(eventInfo.events)"
+        artistName="{{ eventInfo.events[i].artistName }}"
+        date="{{ eventInfo.events[i].date }}"
+        venue="{{ eventInfo.events[i].venue }}"
+        vibeDescription="{{ eventInfo.events[i].vibeDescription }}"
+        additionalDescription="{{ eventInfo.events[i].additionalDescription }}"
+        ticketLink="{{ eventInfo.events[i].ticketLink }}"
+        style="margin-top: 15px; margin-right: 30px;"
+      ></app-event-card>
+    </div>
+    <app-arrow-heading
+    headingText="contact"
+    style="margin-bottom: 15px"
+  ></app-arrow-heading>
+  <app-rectangle-box
+    text="email us"
+    style="margin-right: 13px; margin-bottom: 200px;"
+  ></app-rectangle-box>
+  </div>
+  
+</div >
+<div style="display:flex; justify-content: space-around; align-items: center;">
+    <div  class="responsive-border" style="
+height: 0.124rem;
+background: #000;
+"></div>
+<div class="text"> made by alyssa gillen </div>
+<div class="responsive-border" style="
+height: 0.124rem;
+background: #000;
+"></div>
+</div>

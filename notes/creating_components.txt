@@ -1,0 +1,74 @@
+There are four components to be built out.
+Once they are built, I will use them to built the page.
+
+HEADER GRAPHIC COMPONENT
+1. Screenshot the header graphic in Figma, add to assets folder
+    There is an option to export as PNG or JPG but the quality is not good
+    So this is currently the best option I have come up with to export the image
+    Eventually I want to construct it out of svg/text elements instead.
+2. Make a folder called components under app folder
+3. Create header-graphic component, run ng generate component header-graphic
+4. Set encapsulation to None, encapsulation: ViewEncapsulation.None
+5. Add image to HTML file
+    <img src="../../assets/header-graphic.png" style="width: 306px; height: 293px;"/>
+    These are the dimensions from Figma
+7. Add the component to the home page to verify that it is working/looks good
+    HTML: <app-header-graphic></app-header-graphic>
+
+ARROW HEADING COMPONENT
+1. Copy code from Figma for the arrow 
+    HTML: <svg xmlns="http://www.w3.org/2000/svg" width="566" height="18" viewBox="0 0 566 18" fill="none" class="browser-view-off">
+                <path d="M565.66 9L557 0.339746L548.34 9L557 17.6603L565.66 9ZM0 10.5L557 10.5V7.5L0 7.5L0 10.5Z" fill="black"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="273" height="18" viewBox="0 0 273 18" fill="none" class="mobile-view-off mobile-view-on">
+                <path d="M272.66 9L264 0.339746L255.34 9L264 17.6603L272.66 9ZM0 10.5L264 10.5V7.5L0 7.5L0 10.5Z" fill="black"/>
+          </svg>
+    There are two because there is a long and short version of the arrow
+2. Add CSS to turn on long arrow when browser and turn on short arrow when mobile
+    CSS: .mobile-view-on{display: none;}
+         @media(max-width: 400px){
+            .browser-view-off{display: none;}
+            .mobile-view-on{display: flex;}}
+2. Add the text
+    HTML: <h2 class="text">{{headingText}}...</h2>
+    TS: @Input() headingText: string ='';
+    I created an input variable so the heading text comes from the parent class
+    This is because there are two different usages of the heading 
+    One for Events and one for Contact
+3. Add the component to the home page to verify that it is working/looks good
+    HTML: <app-arrow-heading [headingText]="eventsHeadingText"></app-arrow-heading>
+    TS:   eventsHeadingText = "events"
+          contactHeadingText = "contact"
+    Toggle browser and mobile view to see arrow changing to browser/mobile view
+
+RECTANGLE BOX COMPONENT
+1. Create the rectangle, copy Figma 
+    Align items is center so icon/text will be vertically centered, display flex
+    Used ngClass to add conditional styling, 
+        if toggleOption is false on text box set the width and spacing for non-month text boxes
+            ex: contact us
+        if toggleOption is true, then it is a month text box and set the width and spacing to account for toggle icon
+2. Create dash and text, copy Figma
+    Applied padding after viewing in browser with developer tools
+        Without the added padding, dash/text are right up against the edge of the box
+    Applied uppercase text to text as per design with a css class
+    Text is from an input variable, passed from parent.
+    TS:   @Input() month: string = '';
+3. Create a method for checking if text is a month
+    Create an enum with month names
+    Create a helper function that checks if text passed in is in enum
+    If so, set toggleOption to true
+    Since the text box will be for the month box
+3. Add option for toggle icon
+    HTML: <div style="font-size: 2.5rem; padding:0rem 0rem 0.5rem 2rem;" *ngIf="toggleOption">-</div>
+    TS:   @Input() toggleOption: boolean = false;
+4. Add the component to the home page to verify that it is working/looks good
+
+EVENT CARD COMPONENT
+1. Generate a new component under components
+
+
+
+
+
+

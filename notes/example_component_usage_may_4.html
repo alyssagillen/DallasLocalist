@@ -1,0 +1,31 @@
+<app-header-graphic></app-header-graphic>
+<app-arrow-heading headingText="contact"></app-arrow-heading>
+<app-rectangle-box text="email us"></app-rectangle-box>
+<app-rectangle-box text="june" (toggleBoxes)="toggleBoxesJune($event)"></app-rectangle-box>
+<div *ngIf="toggleJuneBoxesOn">
+<app-event-card
+artistName = "Alyssa Gillen"
+date = "Saturday, 10"
+venue = "Ruins"
+vibeDescription = "21+ Bar and Music Venue"
+additionalDescription="Standing Room Only"
+ticketLink="https://www.ruinsdeepellum.com"
+></app-event-card>
+<app-event-card
+artistName = "Alyssa Gillen"
+date = "Saturday, 10"
+venue = "Ruins"
+vibeDescription = "21+ Bar and Music Venue"
+additionalDescription="Standing Room Only"
+ticketLink="https://www.ruinsdeepellum.com"
+></app-event-card>
+<app-event-card
+artistName = "Alyssa Gillen"
+date = "Saturday, 10"
+venue = "Ruins"
+vibeDescription = "21+ Bar and Music Venue"
+additionalDescription="Standing Room Only"
+ticketLink="https://www.ruinsdeepellum.com"
+></app-event-card>
+
+</div>

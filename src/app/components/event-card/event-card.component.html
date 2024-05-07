@@ -1,0 +1,27 @@
+  <div *ngIf="toggleBoxesOn" style="margin-top:15px;">
+  <div style="width: 17rem; height: 13rem; border: 5px solid #000; border-bottom: 0px;">
+    <div style="padding: 0.5rem 1.5rem 0.5rem 1.5rem">
+      
+        <span class="text" style="font-weight: 800; font-size: 1.6rem;">{{ artistName }}</span>
+        <div style="display: flex; justify-content: space-between">
+        
+ 
+      <span class="text">{{ venue }}</span>
+      <span class="text">{{ date }}</span>
+    </div>
+      <div
+        style="
+          height: 0.124rem;
+          background: #000;
+          margin: 5px 0px 5px 0px;
+        "
+      ></div>
+      <div style="display: flex; flex-direction: column">
+        <span class="text">{{ vibeDescription }}</span>
+        <span class="text">{{ additionalDescription }}</span>
+      </div>
+    </div>
+</div>
+    <app-rectangle-box text="tickets" [ticketLink]="ticketLink"></app-rectangle-box>
+</div>
+

@@ -1,0 +1,19 @@
+.text{
+    color: #000;
+    font-family: "Apple SD Gothic Neo";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8125rem; 
+}
+.mobile-view-on{
+    display: none;
+}
+@media(max-width: 1024px){
+    .browser-view-off{
+        display: none;
+    }
+    .mobile-view-on{
+        display: flex;
+    }
+}

@@ -1,0 +1,29 @@
+<a 
+  (click) = "doClick();"
+  href="javascript:void(0)"
+  style="
+    border: 5px solid #000;
+    background: #d65555;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  "
+  [ngClass]="{
+    'non-month-box-width': !toggleOption,
+    'month-box-width': toggleOption,
+    'end-spacing': !toggleOption,
+    'between-spacing': toggleOption
+  }"
+>
+  <div
+    style="font-size: 2.5rem; padding: 0rem 0rem 0.5rem 2rem; color: #000;"
+    *ngIf="toggleOption"
+  >
+    -
+  </div>
+  <div class="text" style="padding-right: 1.5rem"
+  [ngClass]="{'uppercase-text': toggleOption}">
+    {{ text }}
+  </div>
+</a>
