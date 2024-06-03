@@ -9,6 +9,9 @@
 .responsive-border{
     width: 40%;
 }
+.responsive-cards{
+    width: 569px;
+}
 @media(max-width: 1024px){
     .body{
         flex-direction: column;
@@ -16,6 +19,7 @@
     }
     .responsive-cards{
         flex-direction: column;
+        width: min-content;
     }
     .responsive-border{
         width: 25% !important;

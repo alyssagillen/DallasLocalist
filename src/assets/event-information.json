@@ -1,22 +1,43 @@
 {
   "events": {
     "0": {
-      "artistName": "Sample Artist",
-      "date": "Saturday, 8",
+      "artistName": "The Deadly Beloved",
       "month": "june",
-      "venue": "Ruins",
-      "vibeDescription": "21+ Bar and Music Venue",
-      "additionalDescription": "Standing Room Only",
-      "ticketLink": "https://www.ruinsdeepellum.com"
+      "venue": "@ Club Dada, Dallas",
+      "date": "June 6, Thursday",
+      "time": "6:30-10:30PM",
+      "description": "Loren Kole, Glüestick, and DJ Body Mop",
+      "link": "https://www.seetickets.us/event/dj-body-mop/604573"
     },
     "1": {
-      "artistName": "Sample Artist",
-      "date": "Friday, 21",
+      "artistName": "Prismatic",
+      "subTitle": "A Celebration of Pride",
       "month": "june",
-      "venue": "The Factory",
-      "vibeDescription": "All Ages Music Venue",
-      "additionalDescription": "Standing Room Only",
-      "ticketLink": "https://www.thefactoryindeepellum.com"
+      "venue": "@ Green Goddess Lounge, Denton",
+      "date": "June 12, Wednesday",
+      "time": "7-9PM",
+      "description": "Figaro Nove, TYC Veronica, Michael Elmer, Chy Tea, + The Deadly Beloved",
+      "link": "https://www.eventbrite.com/e/prismatic-a-celebration-of-pride-tickets-911114276327?aff=oddtdtcreator"
+    },
+    "2": {
+      "artistName": "Summer Solstice Concert",
+      "month": "june",
+      "venue": "@ Inclusion Coffee, Arlington",
+      "date": "June 20, Thursday",
+      "time": "8-10PM",
+      "description": "Figaro Nove, Sabela Bee, Filip-emo, Xyzsa Love, + Sugarcoat",
+      "link": ""
+    },
+    "3": {
+      "artistName": "SheRose's Open Mic",
+      "date": "Every Monday",
+      "month": "june",
+      "venue": "The Wine Therapist",
+      "time": "7PM",
+      "description": "21+ Bar",
+      "additionalDescription": "Poetry / Music / Comedy",
+      "link": "https://m.signupgenius.com/#!/showSignUp/60B0849ACAB28A6F58-49720567-may20th"
     }
+    
   }
 }

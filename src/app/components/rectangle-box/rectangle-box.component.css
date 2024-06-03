@@ -1,8 +1,8 @@
 .month-box-width{
-    width: 36.5rem;
+    width: 559px;
 }
 .non-month-box-width{
-    width: 17rem;
+    width: 267px;
 }
 .end-spacing{
     justify-content: end;
@@ -23,6 +23,6 @@
 }
 @media(max-width: 1024px){
     .month-box-width{
-        width: 17rem;
+        width: 267px;
     }
 }

@@ -8,7 +8,7 @@ import { months } from '../../enums/months'
 })
 export class RectangleBoxComponent implements OnInit {
   @Input() text: string = '';
-  @Input() ticketLink: string = '';
+  @Input() link: string = '';
   @Output() toggleBoxes = new EventEmitter<boolean>();
   public toggleOption = false;
   public toggleBoxesOn = true;
@@ -30,10 +30,10 @@ export class RectangleBoxComponent implements OnInit {
     if(this.toggleOption){
         this.toggleBoxesOn = !this.toggleBoxesOn;
         this.toggleBoxes.emit(this.toggleBoxesOn);
-    } else if(this.ticketLink === ''){
+    } else if(this.link === ''){
       window.location.href = "mailto:studiolocalist@gmail.com";
     } else {
-      window.location.href = this.ticketLink;
+      window.location.href = this.link;
     }
   }
 

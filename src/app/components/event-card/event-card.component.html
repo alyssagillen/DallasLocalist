@@ -1,13 +1,16 @@
   <div *ngIf="toggleBoxesOn" style="margin-top:15px;">
-  <div style="width: 17rem; height: 13rem; border: 5px solid #000; border-bottom: 0px;">
-    <div style="padding: 0.5rem 1.5rem 0.5rem 1.5rem">
+  <div style="width: 267px; height: 191px; border: 5px solid #000; border-bottom: 0px;">
+    <div style="padding: 1rem 1.25rem 0.5rem 1.25rem">
       
-        <span class="text" style="font-weight: 800; font-size: 1.6rem;">{{ artistName }}</span>
-        <div style="display: flex; justify-content: space-between">
+        <span class="text" style="font-weight: 800; font-size: 20px;">{{ artistName }}</span>
+        <span class="text" style="font-weight: 800; font-size: 13px; padding-left: 0.5rem;">{{ subTitle }}</span>
+
+        <div style="display: flex; flex-direction: column; padding-top: 0.5rem;">
         
  
       <span class="text">{{ venue }}</span>
       <span class="text">{{ date }}</span>
+      <span class="text">{{ time }}</span>
     </div>
       <div
         style="
@@ -17,11 +20,10 @@
         "
       ></div>
       <div style="display: flex; flex-direction: column">
-        <span class="text">{{ vibeDescription }}</span>
-        <span class="text">{{ additionalDescription }}</span>
+        <span class="text" style="font-weight: 700; font-size: 13px; line-height: 1rem; padding-top: 0.5rem;">{{ description }}</span>
+        <span class="text" style="font-weight: 700; font-size: 13px; line-height: 1rem;">{{ additionalDescription }}</span>
       </div>
     </div>
 </div>
-    <app-rectangle-box text="tickets" [ticketLink]="ticketLink"></app-rectangle-box>
+    <app-rectangle-box text="link" [link]="link"></app-rectangle-box>
 </div>
-
