@@ -9,7 +9,16 @@
       "description": "Loren Kole, Glüestick, and DJ Body Mop",
       "link": "https://www.seetickets.us/event/dj-body-mop/604573"
     },
-    "1": {
+    "1":{
+      "artistName": "very good friends",
+      "month": "june",
+      "venue": "@ 218 N Johnson St, McKinney",
+      "date": "June 8, Saturday",
+      "time": "4:30-5:30PM",
+      "description": "Texas Music Revolution Festival",
+      "link": "https://www.facebook.com/TexasMusicRevolution/"
+    },
+    "2": {
       "artistName": "Prismatic",
       "subTitle": "A Celebration of Pride",
       "month": "june",
@@ -19,7 +28,7 @@
       "description": "Figaro Nove, TYC Veronica, Michael Elmer, Chy Tea, + Maria Carmen",
       "link": "https://www.eventbrite.com/e/prismatic-a-celebration-of-pride-tickets-911114276327?aff=oddtdtcreator"
     },
-    "2": {
+    "3": {
       "artistName": "Summer Solstice Concert",
       "month": "june",
       "venue": "@ Inclusion Coffee, Arlington",
@@ -28,7 +37,7 @@
       "description": "Figaro Nove, Sabela Bee, Filip-emo, Xyzsa Love, + Sugarcoat",
       "link": "https://square.link/u/nIDNUgXl"
     },
-    "3": {
+    "4": {
       "artistName": "SheRose's Open Mic",
       "date": "Every Monday",
       "month": "june",
@@ -38,7 +47,7 @@
       "additionalDescription": "Poetry / Music / Comedy",
       "link": "https://m.signupgenius.com/#!/showSignUp/60B0849ACAB28A6F58-49720567-may20th"
     },
-    "4": {
+    "5": {
       "artistName": "Swing For Your Supper",
       "date": "Every Thursday",
       "month": "june",
