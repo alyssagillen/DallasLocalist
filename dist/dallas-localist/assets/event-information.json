@@ -32,11 +32,21 @@
       "artistName": "SheRose's Open Mic",
       "date": "Every Monday",
       "month": "june",
-      "venue": "The Wine Therapist",
+      "venue": "@ The Wine Therapist, Dallas",
       "time": "7PM",
       "description": "21+ Bar",
       "additionalDescription": "Poetry / Music / Comedy",
       "link": "https://m.signupgenius.com/#!/showSignUp/60B0849ACAB28A6F58-49720567-may20th"
+    },
+    "4": {
+      "artistName": "Swing For Your Supper",
+      "date": "Every Thursday",
+      "month": "june",
+      "venue": "@ The Free Man, Dallas",
+      "time": "7-10PM",
+      "description": "with Roy Tracy & The Tricksters",
+      "additionalDescription": "Tickets - $10 at the door",
+      "link": "https://www.freemandallas.com/calendar/"
     }
     
   }
