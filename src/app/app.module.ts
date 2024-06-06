@@ -22,7 +22,7 @@ import { EventCardComponent } from './components/event-card/event-card.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GtagModule.forRoot({ trackingId: 'YOUR_MEASUREMENT_ID', trackPageviews: true })
+    GtagModule.forRoot({ trackingId: 'G-9H2SQK3HMW', trackPageviews: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
