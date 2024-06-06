@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Gtag } from 'angular-gtag';
 import * as eventInfo from '../../assets/event-information.json'
 
 @Component({
@@ -11,7 +12,10 @@ export class HomeComponent implements OnInit {
   public eventInfo: any = eventInfo;
   objectKeys = Object.keys;
 
-  constructor() { }
+  constructor(private gtag: Gtag) { this.gtag.event('screen_view', {
+    'app_name': 'myApp',
+    'screen_name': 'Home'
+  }); }
 
   ngOnInit(): void {
   }

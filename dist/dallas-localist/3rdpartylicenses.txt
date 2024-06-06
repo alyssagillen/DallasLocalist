@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+angular-gtag
+MIT
+
 rxjs
 Apache-2.0
                                Apache License

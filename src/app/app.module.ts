@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GtagModule } from 'angular-gtag';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,8 @@ import { EventCardComponent } from './components/event-card/event-card.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GtagModule.forRoot({ trackingId: 'YOUR_MEASUREMENT_ID', trackPageviews: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
