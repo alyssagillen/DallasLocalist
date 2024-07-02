@@ -3,47 +3,64 @@
   style="display: flex; justify-content: space-around; margin-top: 5rem"
 >
   <app-header-graphic></app-header-graphic>
-  <div style="display: flex; flex-direction: column">
-    <app-arrow-heading
-      headingText="events"
-      style="margin-bottom: 15px"
-    ></app-arrow-heading>
-    <app-rectangle-box
-      text="june"
-      (toggleBoxes)="toggleBoxesJune($event)"
-    ></app-rectangle-box>
-    <div *ngIf="toggleJuneBoxesOn" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;" class="responsive-cards">
-      <app-event-card
-        *ngFor="let i of objectKeys(eventInfo.events)"
-        artistName="{{ eventInfo.events[i].artistName }}"
-        subTitle="{{ eventInfo.events[i].subTitle }}"
-        date="{{ eventInfo.events[i].date }}"
-        venue="{{ eventInfo.events[i].venue }}"
-        time="{{ eventInfo.events[i].time }}"
-        description="{{ eventInfo.events[i].description }}"
-        additionalDescription="{{ eventInfo.events[i].additionalDescription }}"
-        link="{{ eventInfo.events[i].link }}"
-      ></app-event-card>
+  <div *ngIf="!underConstruction">
+    <div style="display: flex; flex-direction: column">
+      <app-arrow-heading
+        headingText="events"
+        style="margin-bottom: 15px"
+      ></app-arrow-heading>
+      <app-rectangle-box
+        text="june"
+        (toggleBoxes)="toggleBoxesJune($event)"
+      ></app-rectangle-box>
+      <div
+        *ngIf="toggleJuneBoxesOn"
+        style="
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        "
+        class="responsive-cards"
+      >
+        <app-event-card
+          *ngFor="let i of objectKeys(eventInfo.events)"
+          artistName="{{ eventInfo.events[i].artistName }}"
+          subTitle="{{ eventInfo.events[i].subTitle }}"
+          date="{{ eventInfo.events[i].date }}"
+          venue="{{ eventInfo.events[i].venue }}"
+          time="{{ eventInfo.events[i].time }}"
+          description="{{ eventInfo.events[i].description }}"
+          additionalDescription="{{
+            eventInfo.events[i].additionalDescription
+          }}"
+          link="{{ eventInfo.events[i].link }}"
+        ></app-event-card>
+      </div>
+      <app-arrow-heading
+        headingText="contact"
+        style="margin-bottom: 15px"
+      ></app-arrow-heading>
+      <app-rectangle-box
+        text="email us"
+        style="margin-right: 13px; margin-bottom: 200px"
+      ></app-rectangle-box>
     </div>
-    <app-arrow-heading
-    headingText="contact"
-    style="margin-bottom: 15px"
-  ></app-arrow-heading>
-  <app-rectangle-box
-    text="email us"
-    style="margin-right: 13px; margin-bottom: 200px;"
-  ></app-rectangle-box>
+
+  <div
+    style="display: flex; justify-content: space-around; align-items: center"
+  >
+    <div
+      class="responsive-border"
+      style="height: 0.124rem; background: #000"
+    ></div>
+    <div class="text">made by alyssa gillen</div>
+    <div
+      class="responsive-border"
+      style="height: 0.124rem; background: #000"
+    ></div>
+</div>
+
   </div>
-  
-</div >
-<div style="display:flex; justify-content: space-around; align-items: center;">
-    <div  class="responsive-border" style="
-height: 0.124rem;
-background: #000;
-"></div>
-<div class="text"> made by alyssa gillen </div>
-<div class="responsive-border" style="
-height: 0.124rem;
-background: #000;
-"></div>
+  <div *ngIf="underConstruction" class="text">- under construction -</div>
 </div>
